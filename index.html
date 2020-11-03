@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Class 5 Labs</title>
+
+</head>
+<body>
+
+<div class="container w-50%">
+
+
+    <div id="Lab1">
+        <h1>Greetings!</h1>
+
+        <form>
+
+            <label for="fName">First name</label>
+            <input type="text" id="fName">
+
+            <br>
+
+            <label for="lName">Last name</label>
+            <input type="text" id="lName">
+
+            <br>
+
+            <input type="radio" name="rank" id="private" checked="checked" data-abbrev="PVT" data-color="green">
+            <label for="private">Private</label>
+
+            <br>
+
+            <input type="radio" name="rank" id="corporal" data-abbrev="CPL" data-color="orange">
+            <label for="corporal">Corporal</label>
+
+            <br>
+
+            <input type="radio" name="rank" id="sergeant" data-abbrev="SGT" data-color="blue">
+            <label for="sergeant">Sergeant</label>
+
+            <br>
+
+            <button >Submit</button>
+
+            <br>
+            <br>
+
+            <p id="greeting"></p>
+
+        </form>
+    </div>
+
+    <div id="Lab2">
+
+        <h1>jQuery Shopping Cart</h1>
+        <table class="table">
+            <!-- The table header row -->
+            <tr>
+                <th class="centerCell">Quantity</th>
+                <th class="leftCell">Product</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+
+            <!-- Product 1 row -->
+            <tr>
+                <td class="centerCell">
+                    <input type="number" min="0" id="qtyBook" value="0">
+                </td>
+                <td class="leftCell">
+                    <a href="http://www.packtpub.com/learning-jquery-for-interaction-design-web-development-with-javascript/book"
+                       target="_blank">Learning jQuery</a>
+                </td>
+                <td>
+                    $<span id="priceBook">39.99</span>
+                </td>
+                <td>
+                    $<span id="totalBook"></span>
+                </td>
+            </tr>
+
+            <!-- Product 2 row -->
+            <tr>
+                <td class="centerCell">
+                    <input type="number" min="0" id="qtyDonation" value="0">
+                </td>
+                <td class="leftCell">
+                    <a href="http://www.jquery.com" target="_blank">jQuery Donation</a>
+                </td>
+                <td>
+                    $<span id="priceDonation">14.99</span>
+                </td>
+                <td>
+                    $<span id="totalDonation"></span>
+                </td>
+            </tr>
+
+            <!-- Total row -->
+            <tr>
+                <td colspan="3">
+                    <strong>Grand Total:</strong>
+                </td>
+                <td>
+                    $<span id="grandTotal"></span>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
